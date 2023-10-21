@@ -9,7 +9,7 @@ function RemoveBtn ({id}) {
   const router = useRouter()
 
   const removeTopic = async() => {
-    const confirmed =confirm('Are you sure')
+    const confirmed =confirm('Are you sure ?')
 
     if (confirmed){
       const res = await fetch(`/api/topics?id=${id}`, {
